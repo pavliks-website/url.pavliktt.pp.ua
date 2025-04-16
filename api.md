@@ -5,6 +5,25 @@ permalink: /api/
 
 # API
 
+## `/`
+**Method:** any
+
+Redirect to the link creation page *set by the server administrator*
+
+### Request
+```
+GET / HTTP/2
+Host: pyt.pp.ua
+
+```
+
+### Response
+```
+HTTP/2 301 Moved Permanently
+Location: //url.pavliktt.pp.ua/
+
+```
+
 ## `/create`
 **Method:** POST, *(GET, HEAD)*
 
