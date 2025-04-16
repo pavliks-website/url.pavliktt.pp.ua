@@ -35,28 +35,6 @@ title: URL Shortener
             <a id="short-url" href="..." style="font-size: 1.1em; font-family: monospace;">...</a>
         </div>
     </form>
-
-    <h2 style="margin-top: 2em;">API</h2>
-    <div style="text-align: left; font-size: 14px;">
-        <h3><code>/create</code></h3>
-        <p>
-            Create a new link. (POST)
-            <br>
-            <code>
-                { "url": "https://example.com/", "mode": "normal" }
-            </code>
-        </p>
-        <p>Available modes:</p>
-        <ul>
-            <li><code>short</code> — 4 characters</li>
-            <li><code>normal</code> — 6 characters</li>
-            <li><code>long</code> — 10 characters</li>
-        </ul>
-        <p>Response:</p>
-        <code>
-            { url: "http://pyt.pp.ua/..." }
-        </code>
-    </div>
 </div>
 
 <script>
@@ -92,7 +70,8 @@ title: URL Shortener
             try {
                 json = await resp.json();
             } catch (e) { }
-            document.getElementById('error').innerHTML = json.error || error_map[resp.status] || `HTTP ${resp.status} ${resp.statusText}`;
+            document.getElementById('error').innerHTML = json.error ||
+                error_map[resp.status] || `HTTP ${resp.status} ${resp.statusText}`;
             return false;
         }
 
