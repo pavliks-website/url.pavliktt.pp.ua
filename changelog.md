@@ -7,6 +7,9 @@ permalink: /changelog/
 # Changelog
 **URL Shortener uses semantic versioning: MAJOR.MINOR.PATCH**
 
+## 2.2.0
+ - **Actually** implemented `/{link id}!` endpoint...
+
 ## 2.1.0
  - Added `/{link id}!` endpoint to get link metadata
 
