@@ -73,7 +73,10 @@ Host: pyt.pp.ua
 ```
 HTTP/2 200 OK
 Content-Type: application/json
-Content-Length: 49
+Content-Length: 52
 
-{"url":"https://example.com","created":946684800}
+{"url":"https://example.com","created":946677600000}
 ```
+
+`url` - target URL\
+`created` - creation date as a UNIX timestamp with milliseconds
