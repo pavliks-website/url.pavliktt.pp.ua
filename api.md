@@ -24,14 +24,14 @@ Location: //url.pavliktt.pp.ua/
 
 ```
 
-## `/create`
+## `/new`
 **Method:** POST, *(GET, HEAD)*
 
 Create a short link.
 
 ### Request
 ```
-POST /create HTTP/2
+POST /new HTTP/2
 Host: pyt.pp.ua
 
 {
@@ -59,12 +59,14 @@ Content-Length: 34
 {"url":"https://pyt.pp.ua/xxxxxx"}
 ```
 
-## `/{link id}!`
+## `/meta/{link id}`
 **Method:** GET, *(HEAD)*
+
+Get link's metadata
 
 ### Request
 ```
-GET /xxxxxx! HTTP/2
+GET /meta/{link id} HTTP/2
 Host: pyt.pp.ua
 
 ```

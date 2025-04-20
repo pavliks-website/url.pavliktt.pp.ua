@@ -7,6 +7,17 @@ permalink: /changelog/
 # Changelog
 **URL Shortener uses semantic versioning: MAJOR.MINOR.PATCH**
 
+## 3.0.1
+ - Changed v1 link error message
+
+## 3.0.0
+ - v1 links are now deprecated and **no longer supported**
+ - engine completely rewritten to use itty `Router`.
+ - project is now open-source, source code available at [GitLab](https://gitlab.com/pavliks-website/url-shortener-backend)
+
+## 2.2.1
+ - *i dont remember anymore sry*
+
 ## 2.2.0
  - **Actually** implemented `/{link id}!` endpoint...
 

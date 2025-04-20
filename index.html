@@ -11,7 +11,7 @@ title: URL Shortener
 </noscript>
 
 <div id="form" class="center" style="margin-top: 1em;">
-    <form onsubmit="try{u(event.target);}catch{}return !1">
+    <form onsubmit="try{u(event.target)}catch{}return !1">
         <input name="url" type="url" placeholder="Paste your long URL here" id="url" required
             style="width: 100%; max-width: 100%; padding: 4px; background-color: black; color: white; border: 1px solid white; font-family: monospace;" />
         <br><br>
@@ -56,7 +56,7 @@ title: URL Shortener
         let resp;
         try {
             // We're using `//` and not `https://` to keep the protocol
-            resp = await fetch('//pyt.pp.ua/create', {
+            resp = await fetch('//pyt.pp.ua/new', {
                 method: 'POST',
                 body: JSON.stringify({ url: url, mode: size })
             });
